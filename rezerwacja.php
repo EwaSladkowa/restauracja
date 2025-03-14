@@ -22,7 +22,8 @@
         query: "INSERT INTO `rezerwacje`(`data_rez`, `liczba_osob`, `telefon`) 
         VALUES ('$date','$amountOfPeople','$phone')" 
     )
-    mysqli_close
-    
+    mysqli_close(mysql: $connection);
+
+    echo "Dodano rezerwację do bazy";
 
 ?>
